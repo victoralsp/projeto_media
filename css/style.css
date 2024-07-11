@@ -13,6 +13,8 @@
     font-family: var(--font);
 }
 
+
+
 #article_media {
     display: flex;
     height: 100vh;
@@ -103,6 +105,10 @@ input {
     color: rgb(255, 29, 29);
 }
 
+#section_result {
+    margin-top: 2.5em;
+}
+
 #resultado {
     color: #fff;
     padding: 0 1em;
@@ -127,11 +133,11 @@ input {
     padding: .8em;
     width: 50%;
     border-radius: 20px;
-    margin-top: 1em;
     border: 1px solid var(--text-color);
     background-color: #fff;
     color: var(--text-color);
     cursor: pointer;
+    transform: translateY(2em);
     transition: ease .5s;
 }
 
