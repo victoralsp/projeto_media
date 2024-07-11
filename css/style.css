@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg-color: #bfbfbf;
+  --text-color: #1971c2;
+  --font: "Montserrat", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+#article_media {
+    display: flex;
+    height: 100vh;
+    padding: 2.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    background-image: url('../imgs/bg.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 90%;
+}
+
+#section_calc, #section_result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img_livro {
+    width: 50%;
+}
+
+#article_media_tittle {
+    font-size: 3em;
+    text-align: center;
+    font-weight: 800;
+    line-height: 50px;
+    margin: .3em;
+}
+
+#article_media_tittle span {
+    color: var(--text-color);
+    display: block;
+}
+
+div {
+    width: 100%;
+    margin: .2em;
+}
+
+input {
+    padding: .8em;
+    width: 80%;
+    padding-left: 3em;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    border-radius: 6px;
+}
+
+.nome_aluno,
+.nota_portugues,
+.nota_matematica,
+.nota_redacao {
+    position: relative;
+}
+
+#alunoIcone, 
+#iconePortugues,
+#iconeMatematica,
+#iconeRedacao {
+    position: absolute;
+    font-size: 1em;
+    transform: translateY(12px) translateX(55px);
+}
+
+#button_calc {
+    padding: 1em .8em;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: .5em;
+    border: none;
+    background-color: var(--text-color);
+    color: #fff;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+#button_calc:hover {
+    background-color: #12538f;
+}
+
+#errosInput {
+    width: 80%;
+    text-align: center;
+    font-size: .8em;
+    margin-top: 1em;
+    color: rgb(255, 29, 29);
+}
+
+#resultado {
+    color: #fff;
+    padding: 1em 0;
+}
+
+#button_limpar {
+    padding: .8em;
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 1em;
+    border: 1px solid var(--text-color);
+    background-color: #fff;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+#button_limpar:hover {
+    background-color: #12538f;
+    color: #fff;
+    border: 1px solid #ffffff6c;
+}
+
+#icones_escolares {
+    width: 40%;
+    display: none;
+}
