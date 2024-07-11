@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/05ac79b2f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calcular média dos alunos</title>
+</head>
+<body>
+    <article id="article_media">
+       <section id="section_calc">
+            <img src="imgs/livro.png" alt="icone de livro 3D">
+            <h1 id="article_media_tittle">Calcular média <span>dos alunos</span></h1>
+            <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno" autocomplete="off">
+            <input type="text" id="notaPortugues" placeholder="Digite a nota de português" autocomplete="off">
+            <input type="text" id="notaMatematica" placeholder="Digite a nota de matemática" autocomplete="off">
+            <input type="text" id="notaRedacao" placeholder="Digite a nota da redação" autocomplete="off">
+            <button onclick="calcMedia()">Calcular</button>
+            <p id="errosInput"></p>
+       </section>
+        <section id="section_result">
+            <output id="resultado"></output>
+            <button onclick="limparArray()">Limpar lista de alunos e notas</button>
+            <img src="imgs/30118635_7677505-removebg-preview.png" alt="">
+        </section>
+    </article>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
