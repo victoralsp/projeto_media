@@ -13,8 +13,6 @@
     font-family: var(--font);
 }
 
-
-
 #article_media {
     display: flex;
     height: 100vh;
@@ -35,6 +33,25 @@
 
 #img_livro {
     width: 50%;
+    filter: drop-shadow(5px 4px 3px #00000027);
+    transition: ease 1.5s;
+    animation: iconeLivro 2.3s ease;
+}
+
+#img_livro:hover {
+    transform: rotate(20deg) scale(110%);
+}
+
+@keyframes iconeLivro {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px) rotate(-200deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0) rotate(0deg);
+	}
 }
 
 #article_media_tittle {
@@ -107,6 +124,7 @@ input {
 
 #section_result {
     margin-top: 2.5em;
+    position: relative;
 }
 
 #resultado {
@@ -149,5 +167,6 @@ input {
 
 #icones_escolares {
     width: 50%;
-    transform: translateY(2em);
+    filter: drop-shadow(4px 3px 3px #00000027);
+    transform: translateX(15em) rotate(15deg);
 }
