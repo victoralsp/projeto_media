@@ -50,10 +50,9 @@ function limparArray() {
 }
 
 
-// Caso for utilizar depois...
-// function limparResultados() {
-//     nomeAluno.value = ""
-//     notaPortugues.value = ""
-//     notaMatematica.value = ""
-//     notaRedacao.value = ""
-// }
+function limparResultados() {
+    nomeAluno.value = ""
+    notaPortugues.value = ""
+    notaMatematica.value = ""
+    notaRedacao.value = ""
+}
