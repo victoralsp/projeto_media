@@ -129,9 +129,11 @@ input {
 
 #resultado {
     color: #fff;
-    padding: 0 1em;
-    max-height: 250px; 
+    padding: 1em;
+    height: 250px; 
     width: 500px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
     overflow: auto;
     word-wrap: break-word;
 }
