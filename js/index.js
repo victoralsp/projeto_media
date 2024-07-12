@@ -25,7 +25,7 @@ function calcMedia() {
     } else {
         errosInput.innerHTML = ''
         if (media < 5) {
-        resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está reprovado(a).`)
+        resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está <span>reprovado(a)</span>.`)
     } else {
         resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está aprovado(a).`)
     }

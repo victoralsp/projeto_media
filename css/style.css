@@ -136,6 +136,11 @@ input {
     word-wrap: break-word;
 }
 
+#resultado span {
+    color: rgb(255, 110, 110);
+    font-weight: 700;
+}
+
 ::-webkit-scrollbar {
     color: #000000;
     width: 5px;
