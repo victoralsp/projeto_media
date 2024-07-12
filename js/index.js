@@ -49,9 +49,11 @@ function limparArray() {
     mostrarResultados();
 }
 
-function limparResultados() {
-    nomeAluno.value = ""
-    notaPortugues.value = ""
-    notaMatematica.value = ""
-    notaRedacao.value = ""
-}
+
+// Caso for utilizar depois...
+// function limparResultados() {
+//     nomeAluno.value = ""
+//     notaPortugues.value = ""
+//     notaMatematica.value = ""
+//     notaRedacao.value = ""
+// }
