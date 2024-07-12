@@ -28,18 +28,19 @@
 #section_calc, #section_result {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
+    transition: 1s;
 }
 
 #img_livro {
     width: 50%;
     filter: drop-shadow(5px 4px 3px #00000027);
     transition: ease 1.5s;
-    animation: iconeLivro 2.3s ease;
+    animation: iconeLivro 2s ease;
 }
 
 #img_livro:hover {
-    transform: rotate(20deg) scale(110%);
+    transform: rotate(20deg) scale(120%);
 }
 
 @keyframes iconeLivro {
@@ -124,7 +125,6 @@ input {
 
 #section_result {
     margin-top: 2.5em;
-    position: relative;
 }
 
 #resultado {
@@ -132,7 +132,7 @@ input {
     padding: 1em;
     height: 250px; 
     width: 500px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid #12538f;
     border-radius: 5px;
     overflow: auto;
     word-wrap: break-word;
@@ -152,7 +152,7 @@ input {
 
 ::-webkit-scrollbar-thumb {
     background-color: #12538f;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 #button_limpar {
@@ -176,5 +176,18 @@ input {
 #icones_escolares {
     width: 50%;
     filter: drop-shadow(4px 3px 3px #00000027);
-    transform: translateX(15em) rotate(15deg);
+    animation: itensAnimation 2s ease 0s normal forwards;
+    transform: translateX(10em) rotate(20deg);
+}
+
+@keyframes itensAnimation {
+	0% {
+		opacity: 0;
+		transform: translateX(250px) rotate(0deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(10em) rotate(20deg);
+	}
 }
