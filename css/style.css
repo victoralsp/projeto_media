@@ -18,6 +18,7 @@
     height: 100vh;
     padding: 2.5em;
     justify-content: center;
+    align-items: center;
     gap: 10em;
     background-image: url('../imgs/bg.svg');
     background-repeat: no-repeat;
@@ -139,8 +140,10 @@ input {
 }
 
 #resultado span {
-    color: rgb(255, 110, 110);
-    font-weight: 700;
+    color: #f5e36d;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: italic;
 }
 
 ::-webkit-scrollbar {
@@ -174,7 +177,7 @@ input {
 }
 
 #icones_escolares {
-    width: 50%;
+    width: 30%;
     filter: drop-shadow(4px 3px 3px #00000027);
     animation: itensAnimation 2s ease 0s normal forwards;
     transform: translateX(10em) rotate(20deg);

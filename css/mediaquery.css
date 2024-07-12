@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #bfbfbf;
+    --text-color: #1971c2;
+    --font: "Montserrat", sans-serif;
+  }
+
+@media (width <= 1024px) {
+    #article_media {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        gap: 0;
+        background-image: none;
+        margin-top: 3em;
+    }
+
+    #section_calc, #section_result {
+        width: 100%;
+    }
+    #article_media_tittle {
+        line-height: 48px;
+        margin: .5em;
+    }
+
+    input, #button_calc {
+        width: 75%;
+    }
+
+    input:focus {
+        outline: 1px solid var(--text-color);
+    }
+
+    #section_result {
+        background-image: url('../imgs/bg.svg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 500%;
+        max-width: 100%;
+    }
+
+    #resultado {
+        margin-top: 2em;
+        text-align: center;
+        color: #fff;
+        padding: 1em;
+        height: 250px; 
+        max-width: 85%;
+        border: 2px solid #12538f;
+        border-radius: 5px;
+        overflow: auto;
+        word-wrap: break-word;
+    }
+
+    #button_limpar {
+        width: 60%;
+        padding: 1em;
+    }
+
+    #icones_escolares {
+        width: 30%;
+        margin: 3em 0;
+    }
+
+    @keyframes itensAnimation {
+        0% {
+            opacity: 0;
+            transform: translateX(250px) rotate(0deg);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateX(0em) rotate(20deg);
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 430px) {
+    #alunoIcone, 
+    #iconePortugues,
+    #iconeMatematica,
+    #iconeRedacao {
+    position: absolute;
+    font-size: 1em;
+    transform: translateY(12px) translateX(4em);
+}
+}
+
+@media (min-width: 430px) and (max-width: 600px) {
+    #alunoIcone, 
+    #iconePortugues,
+    #iconeMatematica,
+    #iconeRedacao {
+    position: absolute;
+    font-size: 1em;
+    transform: translateY(12px) translateX(5.5em);
+    }
+
+    input {
+        padding-left: 5em;
+    }
+}
+
+
+@media (width > 600px) {
+
+}
+
+@media (width >= 768px) {
+
+}
+
+@media (width >= 992px) and (width < 1200px) {
+    
+}

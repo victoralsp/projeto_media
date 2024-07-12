@@ -27,7 +27,7 @@ function calcMedia() {
         if (media < 5) {
         resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está <span>reprovado(a)</span>.`)
     } else {
-        resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está aprovado(a).`)
+        resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está <span>aprovado(a)</span>.`)
     }
     }
     localStorage.setItem('resultados', JSON.stringify(resultados));
