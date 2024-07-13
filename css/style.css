@@ -35,6 +35,7 @@
 
 #img_livro {
     width: 50%;
+    max-width: 300px;
     filter: drop-shadow(5px 4px 3px #00000027);
     transition: ease 1.5s;
     animation: iconeLivro 2s ease;
@@ -77,18 +78,12 @@ div {
 input {
     padding: .8em;
     width: 80%;
+    max-width: 400px;
     padding-left: 3em;
     display: block;
     margin: 0 auto;
     border: 1px solid rgba(0, 0, 0, 0.507);
     border-radius: 6px;
-}
-
-.nome_aluno,
-.nota_portugues,
-.nota_matematica,
-.nota_redacao {
-    position: relative;
 }
 
 #alunoIcone, 
@@ -103,6 +98,7 @@ input {
 #button_calc {
     padding: 1em .8em;
     width: 80%;
+    max-width: 400px;
     border-radius: 20px;
     margin-top: .5em;
     border: none;
@@ -161,6 +157,7 @@ input {
 #button_limpar {
     padding: .8em;
     width: 50%;
+    max-width: 400px;
     border-radius: 20px;
     border: 1px solid var(--text-color);
     background-color: #fff;
@@ -178,6 +175,7 @@ input {
 
 #icones_escolares {
     width: 30%;
+    max-width: 250px;
     filter: drop-shadow(4px 3px 3px #00000027);
     animation: itensAnimation 2s ease 0s normal forwards;
     transform: translateX(10em) rotate(20deg);
