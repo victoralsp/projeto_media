@@ -14,27 +14,28 @@
        <section id="section_calc">
             <img src="imgs/livro2.png" id="img_livro" alt="icone de livro 3D">
             <h1 id="article_media_tittle">Calcular média <span>dos alunos</span></h1>
-            <div id="nome_aluno">
-                <i class="fa-regular fa-user" id="alunoIcone"></i>
-                <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno" autocomplete="off">
-            </div>
-            <div id="nota_portugues">
-                <i class="fa-solid fa-language" id="iconePortugues"></i>
-                <input type="text" id="notaPortugues" placeholder="Digite a nota de português" autocomplete="off">
-            </div>
-            <div id="nota_matematica">
-                <i class="fa-solid fa-square-root-variable" id="iconeMatematica"></i>
-                <input type="text" id="notaMatematica" placeholder="Digite a nota de matemática" autocomplete="off">
-            </div>
-            <div id="nota_redacao">
-                <i class="fa-regular fa-file-lines" id="iconeRedacao"></i>
-                <input type="text" id="notaRedacao" placeholder="Digite a nota da redação" autocomplete="off">
-            </div>
-            <button onclick="calcMedia()" id="button_calc">Calcular</button>
+            <form action="">
+                <div id="nome_aluno">
+                    <i class="fa-regular fa-user" id="alunoIcone"></i>
+                    <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno" autocomplete="off">
+                </div>
+                <div id="nota_portugues">
+                    <i class="fa-solid fa-language" id="iconePortugues"></i>
+                    <input type="text" id="notaPortugues" placeholder="Digite a nota de português" autocomplete="off">
+                </div>
+                <div id="nota_matematica">
+                    <i class="fa-solid fa-square-root-variable" id="iconeMatematica"></i>
+                    <input type="text" id="notaMatematica" placeholder="Digite a nota de matemática" autocomplete="off">
+                </div>
+                <div id="nota_redacao">
+                    <i class="fa-regular fa-file-lines" id="iconeRedacao"></i>
+                    <input type="text" id="notaRedacao" placeholder="Digite a nota da redação" autocomplete="off">
+                </div>
+                <button onclick="calcMedia()" id="button_calc">Calcular</button>
+            </form>
             <p id="errosInput"></p>
        </section>
-        <section id="section_result">
-            
+        <section id="section_result">      
             <output id="resultado"></output>
             <button onclick="limparArray()" id="button_limpar">Limpar lista de notas</button>
             <img src="imgs/icones_escolares.png" alt="icone de itens escolares" id="icones_escolares">

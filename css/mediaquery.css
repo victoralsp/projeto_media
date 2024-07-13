@@ -22,8 +22,14 @@
         margin: .5em;
     }
 
-    input, #button_calc {
-        width: 75%;
+    form {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #button_limpar {
+        width: 80%;
+        max-width: 330px;
     }
 
     input:focus {
@@ -74,29 +80,14 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 430px) {
-    #alunoIcone, 
-    #iconePortugues,
-    #iconeMatematica,
-    #iconeRedacao {
-    position: absolute;
-    font-size: 1em;
-    transform: translateY(12px) translateX(4em);
-}
-}
-
-@media (min-width: 430px) and (max-width: 600px) {
-    #alunoIcone, 
-    #iconePortugues,
-    #iconeMatematica,
-    #iconeRedacao {
-    position: absolute;
-    font-size: 1em;
-    transform: translateY(12px) translateX(5.5em);
-    }
-
-    input {
-        padding-left: 5em;
+/* 1024 até 1152 */
+@media (width > 1024px) and (width < 1152px)  {
+    #article_media {
+        gap: 4em;
+        background-size: cover;
     }
 }
+
+
+
 

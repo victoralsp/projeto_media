@@ -70,35 +70,46 @@
     display: block;
 }
 
-div {
-    width: 100%;
-    margin: .2em;
+form {
+    width: 20.625em;
+    margin: 0 auto;
 }
 
-input {
+#nome_aluno,
+#nota_portugues,
+#nota_matematica,
+#nota_redacao {
+    margin: .2em;
+    position: relative;
+    width: 100%;
+}
+#nome_aluno i,
+#nota_portugues i,
+#nota_matematica i,
+#nota_redacao i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #000;
+}
+#nomeAluno, 
+#notaPortugues,
+#notaMatematica,
+#notaRedacao {
     padding: .8em;
-    width: 80%;
+    width: 100%;
     max-width: 400px;
     padding-left: 3em;
-    display: block;
     margin: 0 auto;
     border: 1px solid rgba(0, 0, 0, 0.507);
-    border-radius: 6px;
-}
-
-#alunoIcone, 
-#iconePortugues,
-#iconeMatematica,
-#iconeRedacao {
-    position: absolute;
-    font-size: 1em;
-    transform: translateY(12px) translateX(55px);
+    border-radius: 6px; 
 }
 
 #button_calc {
     padding: 1em .8em;
-    width: 80%;
-    max-width: 400px;
+    width: 100%;
     border-radius: 20px;
     margin-top: .5em;
     border: none;
