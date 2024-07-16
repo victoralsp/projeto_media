@@ -3,6 +3,7 @@ const nomeAluno = document.getElementById("nomeAluno")
 const notaPortugues = document.getElementById("notaPortugues")
 const notaMatematica = document.getElementById("notaMatematica")
 const notaRedacao = document.getElementById("notaRedacao")
+const errosInput = document.getElementById("errosInput")
 let resultados = []
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -10,6 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
         resultados = JSON.parse(localStorage.getItem('resultados'))
         mostrarResultados()
     }
+    const form = document.getElementById("formCalculo");
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        calcMedia();
+    });
 });
 
 function calcMedia() {
@@ -20,19 +26,20 @@ function calcMedia() {
 
     let media = (notaPortuguesInput + notaMatematicaInput + notaRedacaoInput) / 3
     media = media.toFixed(2)
-    if (aluno == '' || !isNaN(aluno) || isNaN(notaPortuguesInput) || isNaN(notaMatematicaInput) || isNaN(notaRedacaoInput)) {
+
+    if (aluno === '' || !isNaN(aluno) || isNaN(notaPortuguesInput) || isNaN(notaMatematicaInput) || isNaN(notaRedacaoInput)) {
         errosInput.innerHTML = 'Verifique se o nome e as notas estão preenchidas corretamente.'
     } else {
-        errosInput.innerHTML = ''
+        errosInput.innerHTML = '';
         if (media < 5) {
         resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está <span>reprovado(a)</span>.`)
     } else {
         resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está <span>aprovado(a)</span>.`)
     }
-    }
     localStorage.setItem('resultados', JSON.stringify(resultados));
     mostrarResultados()
     limparResultados()
+    }
 }
 
 function mostrarResultados() {
