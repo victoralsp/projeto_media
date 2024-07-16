@@ -80,7 +80,6 @@
     }
 }
 
-/* 1024 até 1152 */
 @media (width > 1024px) and (width < 1152px)  {
     #article_media {
         gap: 4em;
