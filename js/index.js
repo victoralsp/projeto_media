@@ -31,11 +31,15 @@ function calcMedia() {
         errosInput.innerHTML = 'Verifique se o nome e as notas estão preenchidas corretamente.'
     } else {
         errosInput.innerHTML = '';
-        if (media < 5) {
-        resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está <span>reprovado(a)</span>.`)
-    } else {
-        resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está <span>aprovado(a)</span>.`)
-    }
+        if ((notaPortuguesInput < 0 || notaPortuguesInput > 10) || (notaMatematicaInput < 0 || notaMatematicaInput > 10) || (notaRedacaoInput < 0 || notaRedacaoInput > 10)) {
+            errosInput.innerHTML = "Digite uma nota entre 0 e 10."
+        } else {
+            if (media < 5) {
+                resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está <span>reprovado(a)</span>.`)
+            } else {
+                resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está <span>aprovado(a)</span>.`)
+            }
+        }
     localStorage.setItem('resultados', JSON.stringify(resultados));
     mostrarResultados()
     limparResultados()
