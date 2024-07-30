@@ -23,7 +23,6 @@ function calcMedia() {
     let notaPortuguesInput = parseFloat(notaPortugues.value)
     let notaMatematicaInput = parseFloat(notaMatematica.value)
     let notaRedacaoInput = parseFloat(notaRedacao.value)
-
     let media = (notaPortuguesInput + notaMatematicaInput + notaRedacaoInput) / 3
     media = media.toFixed(2)
 
@@ -59,7 +58,6 @@ function limparArray() {
     localStorage.setItem('resultados', JSON.stringify(resultados)); 
     mostrarResultados();
 }
-
 
 function limparResultados() {
     nomeAluno.value = ""
