@@ -77,6 +77,61 @@
             transform: translateX(0em) rotate(20deg);
         }
     }
+
+   /* começaqui */
+
+   #bg-icones_escolares {
+    transition: ease 2s;
+    margin: 1em;
+    text-align: center;
+}
+#bg-icones_escolares:hover {
+    transform: rotate(-10deg);
+}
+
+#bg_icone {
+    position: absolute;
+    border-radius: 70px 20px 70px 70px;
+    width: 12em;
+    height: 10em;
+    background-color: #10457781;
+    animation: bgEscolar 2s ease 0s normal forwards;
+}
+
+@keyframes bgEscolar {
+    0% {
+        opacity: 0;
+        transform: translateY(0px) translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        margin: 150px 20px;
+        transform: translateX(0em) rotate(10deg);
+    }
+}
+
+#icones_escolares {
+    z-index: 1;
+    position: relative;
+    width: 60%;
+    min-width: 150px;
+    max-width: 250px;
+    filter: drop-shadow(4px 3px 3px #00000027);
+    animation: iconeEscolar 2s ease 0s normal forwards;
+}
+
+@keyframes iconeEscolar {
+	0% {
+		opacity: 0;
+		transform: translateX(-200px) rotate(0deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0em) rotate(10deg);
+	}
+}
 }
 
 @media (width > 1024px) and (width < 1152px)  {
@@ -85,7 +140,6 @@
         background-size: cover;
     }
 }
-
 
 
 
