@@ -48,7 +48,10 @@ function calcMedia() {
 function mostrarResultados() {
     let html = ''
     resultados.forEach(resultado => {
-        html += `<p>${resultado}</p>`
+        html += 
+        `<ul>
+        <li>${resultado}</li>
+        </ul>`
     })
     resultado.innerHTML = html
 }
