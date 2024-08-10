@@ -13,6 +13,25 @@
     font-family: var(--font);
 }
 
+#header {
+    position: fixed;
+    left: 2em;
+    top: 2em;
+}
+
+#btnDark {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    cursor: pointer;
+    background: #1971c2;
+    padding: .5em .4em;
+    border-radius: 100px;
+    color: #ffffff;
+    border: none;
+    font-size: 1.2em;
+}
+
 #article_media {
     display: flex;
     height: 100vh;
@@ -249,5 +268,29 @@ li {
 	}
 }
 
-            /* Dark Mode*/
+body.dark-mode {
+    background-color: #292929;
+}
 
+.dark-mode #article_media_tittle {
+    color: #fff;
+}
+
+.dark-mode .input_dark {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    outline: none;
+}
+
+.dark-mode #button_limpar {
+    background-color: #292929;
+    color: #fff;
+    border: none;
+}
+
+.dark-mode #nome_aluno i,
+.dark-mode #nota_portugues i,
+.dark-mode #nota_matematica i,
+.dark-mode #nota_redacao i {
+    color: #cecece; 
+}
