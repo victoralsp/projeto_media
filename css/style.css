@@ -188,14 +188,14 @@ li {
 
 ::-webkit-scrollbar {
     color: #000000;
-    width: 5px;
+    width: 10px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #12538f;
-    border-radius: 2px;
+    border-radius: 25px;
 }
 
 #button_limpar {
