@@ -7,15 +7,6 @@ const errosInput = document.getElementById("errosInput")
 let resultados = []
 
 document.addEventListener('DOMContentLoaded', function() {
-    const savedTheme = localStorage.getItem('theme')
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode')
-        document.getElementById('article_media_tittle').classList.add('dark-mode')
-        document.querySelectorAll('.input_dark').forEach(input => input.classList.add('dark-mode'))
-        document.querySelectorAll('.icone_input').forEach(icon => icon.classList.add('dark-mode'))
-        document.getElementById('button_limpar').classList.add('dark-mode')
-    }
-
     if (localStorage.getItem('resultados')) {
         resultados = JSON.parse(localStorage.getItem('resultados'))
         mostrarResultados()
@@ -27,6 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
         calcMedia()
     })
 
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode')
+        document.getElementById('article_media_tittle').classList.add('dark-mode')
+        document.querySelectorAll('.input_dark').forEach(input => input.classList.add('dark-mode'))
+        document.querySelectorAll('.icone_input').forEach(icon => icon.classList.add('dark-mode'))
+        document.getElementById('button_limpar').classList.add('dark-mode')
+    }
     const toggleButton = document.getElementById('btnDark')
     toggleButton.addEventListener('click', () => {
         const isDarkMode = document.body.classList.toggle('dark-mode')
